@@ -1,0 +1,374 @@
+h1 {
+	text-align: center;
+	font-family: 'Roboto', sans-serif;
+}
+
+.robots {
+}
+
+.head,
+.left_arm,
+.torso,
+.right_arm,
+.left_leg,
+.right_leg {
+	 background-color: #0decec;
+}
+
+.head {
+	width: 200px;
+	margin: 0 auto;
+	height: 150px;
+	border-radius: 200px 200px 0 0;
+	margin-bottom: 10px;
+	animation: headDance 2s ease-in-out 0s infinite;
+}
+
+.eyes {
+	display: inline-block;
+	animation: eyeDance 2s ease-in-out 0s infinite;
+
+}
+
+/* .head:hover {
+	width: 300px;
+    transition: 1s ease-in-out;
+} */
+
+.upper_body {
+	width: 300px;
+	height: 150px;
+	margin: 0 auto;
+	display: flex;
+}
+
+.left_arm, .right_arm {
+	width: 40px;
+	height: 125px;
+	border-radius: 100px;
+	background-color: #07bfbf;
+}
+
+.left_arm {
+	margin-right: 10px;
+	animation: leftArm 2s ease-in-out 0s infinite;
+	transform-origin: top;
+}
+
+.right_arm {
+	margin-left: 10px;
+	animation: rightArm 2s ease-in-out 0s infinite;
+	transform-origin: top;
+}
+
+.torso {
+	width: 200px;
+	height: 200px;
+	border-radius: 0 0 50px 50px;
+}
+
+.lower_body {
+	width: 200px;
+	height: 200px;
+	/* This is another useful property. Hmm what do you think it does?*/
+	margin: 0 auto;
+
+}
+
+.left_leg, .right_leg {
+	width: 40px;
+	height: 120px;
+	border-radius: 0 0 100px 100px;
+}
+
+.left_leg {
+	margin-left: 120px;
+	margin-top: 20px;
+	animation: leftLeg 2s ease-in-out 0s infinite;
+}
+
+/* .robots:hover .left_leg {
+	-webkit-transform: rotate(20deg);
+    -moz-transform: rotate(20deg);
+    -o-transform: rotate(20deg);
+    -ms-transform: rotate(20deg);
+    transform: rotate(20deg);
+} */
+
+/* .robots:hover .right_leg {
+	-webkit-transform: rotate(-20deg);
+    -moz-transform: rotate(-20deg);
+    -o-transform: rotate(-20deg);
+    -ms-transform: rotate(-20deg);
+    transform: rotate(-20deg);
+} */
+
+/* .robots:hover .left_arm {
+	-webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.robots:hover .right_arm {
+	-webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+} */
+
+.right_leg {
+	margin-left: 40px;
+	margin-top: -120px;
+	animation: rightLeg 2s ease-in-out 0s infinite;
+}
+
+.left_eye, .right_eye {
+	width: 20px;
+	height: 20px;
+	border-radius: 15px;
+	background-color: white;
+}
+
+.left_eye {
+	/* These properties are new and you haven't encountered
+	in this course. Check out CSS Tricks to see what it does! */
+	position: relative;
+	top: 100px;
+	left: 120px;
+}
+
+.right_eye {
+	position: relative;
+	top: 80px;
+	left: 40px;
+}
+
+@keyframes rightLeg {
+	0% {
+		-webkit-transform: rotate(-0deg);
+	    -moz-transform: rotate(-0deg);
+	    -o-transform: rotate(-0deg);
+	    -ms-transform: rotate(-0deg);
+	    transform: rotate(-0deg);
+	}
+	40% {
+		-webkit-transform: rotate(-30deg);
+	    -moz-transform: rotate(-30deg);
+	    -o-transform: rotate(-30deg);
+	    -ms-transform: rotate(-30deg);
+	    transform: rotate(-30deg);
+	}
+	60% {
+		-webkit-transform: rotate(-0deg);
+	    -moz-transform: rotate(-0deg);
+	    -o-transform: rotate(-0deg);
+	    -ms-transform: rotate(-0deg);
+	    transform: rotate(-0deg);
+	}
+	80% {
+		-webkit-transform: rotate(30deg);
+	    -moz-transform: rotate(30deg);
+	    -o-transform: rotate(30deg);
+	    -ms-transform: rotate(30deg);
+	    transform: rotate(30deg);
+	}
+	100% {
+		-webkit-transform: rotate(-0deg);
+	    -moz-transform: rotate(-0deg);
+	    -o-transform: rotate(-0deg);
+	    -ms-transform: rotate(-0deg);#07bfbf
+	    transform: rotate(-0deg);
+	}
+}
+
+@keyframes leftLeg {
+	0% {
+		-webkit-transform: rotate(30deg);
+	    -moz-transform: rotate(30deg);
+	    -o-transform: rotate(30deg);
+	    -ms-transform: rotate(30deg);
+	    transform: rotate(30deg);
+	}
+	40% {
+		-webkit-transform: rotate(0deg);
+	    -moz-transform: rotate(0deg);
+	    -o-transform: rotate(0deg);
+	    -ms-transform: rotate(0deg);
+	    transform: rotate(0deg);
+	}
+	60% {
+		-webkit-transform: rotate(-30deg);
+	    -moz-transform: rotate(-30deg);
+	    -o-transform: rotate(-30deg);
+	    -ms-transform: rotate(-30deg);
+	    transform: rotate(-30deg);
+	}
+	80% {
+		-webkit-transform: rotate(-0deg);
+	    -moz-transform: rotate(-0deg);
+	    -o-transform: rotate(-0deg);
+	    -ms-transform: rotate(-0deg);
+	    transform: rotate(-0deg);
+	}
+	100% {
+		-webkit-transform: rotate(30deg);
+	    -moz-transform: rotate(30deg);
+	    -o-transform: rotate(30deg);
+	    -ms-transform: rotate(30deg);
+	    transform: rotate(30deg);
+	}
+}
+
+@keyframes leftArm {
+	0% {
+		-webkit-transform: rotate(0deg);
+	    -moz-transform: rotate(0deg);
+	    -o-transform: rotate(0deg);
+	    -ms-transform: rotate(0deg);
+	    transform: rotate(0deg);
+	}
+	25% {
+		-webkit-transform: rotate(150deg);
+	    -moz-transform: rotate(150deg);
+	    -o-transform: rotate(150deg);
+	    -ms-transform: rotate(150deg);
+	    transform: rotate(150deg);
+	}
+	50% {
+		-webkit-transform: rotate(0deg);
+	    -moz-transform: rotate(0deg);
+	    -o-transform: rotate(0deg);
+	    -ms-transform: rotate(0deg);
+	    transform: rotate(0deg);
+	}
+	75% {
+		-webkit-transform: rotate(-90deg);
+	    -moz-transform: rotate(-90deg);
+	    -o-transform: rotate(-90deg);
+	    -ms-transform: rotate(-90deg);
+	    transform: rotate(-90deg);
+	}
+	100% {
+		-webkit-transform: rotate(0deg);
+	    -moz-transform: rotate(0deg);
+	    -o-transform: rotate(0deg);
+	    -ms-transform: rotate(0deg);
+	    transform: rotate(0deg);
+	}
+}
+
+@keyframes rightArm {
+	0% {
+		-webkit-transform: rotate(0deg);
+	    -moz-transform: rotate(0deg);
+	    -o-transform: rotate(0deg);
+	    -ms-transform: rotate(0deg);
+	    transform: rotate(0deg);
+	}
+	25% {
+		-webkit-transform: rotate(90deg);
+	    -moz-transform: rotate(90deg);
+	    -o-transform: rotate(90deg);
+	    -ms-transform: rotate(90deg);
+	    transform: rotate(90deg);
+	}
+	50% {
+		-webkit-transform: rotate(0deg);
+	    -moz-transform: rotate(0deg);
+	    -o-transform: rotate(0deg);
+	    -ms-transform: rotate(0deg);
+	    transform: rotate(0deg);
+	}
+	75% {
+		-webkit-transform: rotate(-150deg);
+	    -moz-transform: rotate(-150deg);
+	    -o-transform: rotate(-150deg);
+	    -ms-transform: rotate(-150deg);
+	    transform: rotate(-150deg);
+	}
+	100% {
+		-webkit-transform: rotate(0deg);
+	    -moz-transform: rotate(0deg);
+	    -o-transform: rotate(0deg);
+	    -ms-transform: rotate(0deg);
+	    transform: rotate(0deg);
+		}
+}
+@keyframes headDance {
+	0% {
+		-webkit-transform: scale(1.5, 1);
+	    -moz-transform: scale(1.5, 1);
+	    -o-transform: scale(1.5, 1);
+	    -ms-transform: scale(1.5, 1);
+	    transform: scale(1.5, 1);
+	}
+	25% {
+		-webkit-transform: scale(1);
+	    -moz-transform: scale(1);
+	    -o-transform: scale(1);
+	    -ms-transform: scale(1);
+	    transform: scale(1);
+	}
+	50% {
+		-webkit-transform: scale(1.5, 1);
+	    -moz-transform: scale(1.5, 1);
+	    -o-transform: scale(1.5, 1);
+	    -ms-transform: scale(1.5, 1);
+	    transform: scale(1.5, 1);
+	}
+	75% {
+		-webkit-transform: scale(1);
+	    -moz-transform: scale(1);
+	    -o-transform: scale(1);
+	    -ms-transform: scale(1);
+	    transform: scale(1);
+	}
+	100% {
+		-webkit-transform: scale(1.5, 1);
+	    -moz-transform: scale(1.5, 1);
+	    -o-transform: scale(1.5, 1);
+	    -ms-transform: scale(1.5, 1);
+	    transform: scale(1.5, 1);
+	}
+}
+
+@keyframes eyeDance {
+	0% {
+		-webkit-transform: scale(0.8) translate(100px, 0px);
+	    -moz-transform: scale(0.8) translate(100px, 0px);
+	    -o-transform: scale(0.8) translate(100px, 0px);
+	    -ms-transform: scale(0.8) translate(100px, 0px);
+	    transform: scale(0.8) translate(100px, 0px);
+	}
+	25% {
+		-webkit-transform: scale(1) translate(0px, 0px);
+	    -moz-transform: scale(1) translate(0px, 0px);
+	    -o-transform: scale(1) translate(0px, 0px);
+	    -ms-transform: scale(1) translate(0px, 0px);
+	    transform: scale(1) translate(0px, 0px);
+	}
+	50% {
+		-webkit-transform: scale(0.8) translate(-40px, 0px);
+	    -moz-transform: scale(0.8) translate(-40px, 0px);
+	    -o-transform: scale(0.8) translate(-40px, 0px);
+	    -ms-transform: scale(0.8) translate(-40px, 0px);
+	    transform: scale(0.8) translate(-40px, 0px);
+	}
+	75% {
+		-webkit-transform: scale(1) translate(0px, 0px);
+	    -moz-transform: scale(1) translate(0px, 0px);
+	    -o-transform: scale(1) translate(0px, 0px);
+	    -ms-transform: scale(1) translate(0px, 0px);
+	    transform: scale(1) translate(0px, 0px);
+	}
+	100% {
+		-webkit-transform: scale(0.8) translate(100px, 0px);
+	    -moz-transform: scale(0.8) translate(100px, 0px);
+	    -o-transform: scale(0.8) translate(100px, 0px);
+	    -ms-transform: scale(0.8) translate(100px, 0px);
+	    transform: scale(0.8) translate(100px, 0px);
+	}
+}
